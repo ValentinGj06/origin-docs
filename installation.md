@@ -6,15 +6,13 @@ lang: en-US
 # Installation
 
 * [Manual Installation](#manual-installation)
-* [Docker Installation](#docker-installation)
-* [Digital Ocean (Docker)](#digital-ocean-docker)
 
 ## Manual Installation
 
 ### Requirements
 
 ```
-PHP >= 7.2.0
+PHP >= 7.3.0
 BCMath PHP Extension
 Ctype PHP Extension
 JSON PHP Extension
@@ -24,98 +22,62 @@ PDO PHP Extension
 Tokenizer PHP Extension
 XML PHP Extension
 ```
-
-### Step 1 : Download
-
-[Download](http://craterapp.com/downloads) the latest Crater package.
-
-Alternatively, If you are a developer, follow the installation steps for your project on [this Link](./developer-guide.md)
-
-### Step 2 : Upload to Server
-
-Upload the downloaded zip file to your Server and unzip it, you should see the Crater folder.
-
-### Step 3 : Point the domain to the uploaded folder
-
-Point your domain or subdomain to the `public` directory inside the Crater folder. 
-
-Please note that, Crater must be installed on a primary domain or subdomain. Installing on a sub-folder will not work, for example:
-- `example.com/craterapp` (Invalid)
-- `localhost/crater` (Invalid)
-- `example.com` (Valid)
-- `crater.example.com` (Valid)
-- `crater.test` (Valid)
-
-### Step 3 : Complete installation wizard
-
-Open the link to the domain in the browser (Example: `https://demo.craterapp.com`) and complete the installation wizard as directed.
-
-## Docker Installation
-
-### Step 1 : Install Docker
-
-Install Docker on your host: [https://docs.docker.com/install/](https://docs.docker.com/install/)
-
-### Step 2 : Install Docker Compose
-Install docker-compose by using this guide: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
-
-### Step 3 : Clone repository
-Clone the repository by running this command: `git clone https://github.com/bytefury/crater`
-
-
-### Step 4 : Run below commands
-Change your current working directory and run your app using below commands:
-
-```
-$ cd crater
-$ cp .env.example .env
-$ docker-compose up -d
-$ ./docker-compose/setup.sh
-```
-
-### Step 5 : Complete installation wizard
-Open your web browser and go to your given domain (default: [http://localhost](http://localhost)) and follow the installation wizard.
-
-On Installation wizard - Database setup, use below credentials:
-- Database Host: `db`
-- Database Name: `crater`
-- Database Username: `crater`
-- Database Password: `crater`  
-
-## Digital Ocean (Docker)
-
-### Prerequisites
-
-- Access to an Ubuntu 18.04 local machine or development server as a non-root user with sudo privileges. If you’re using a remote server, it’s advisable to have an active firewall installed. To set these up, please refer to [Initial Server Setup Guide for Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04) on Digital Ocean.
-
-- Docker installed on your server, following Steps 1 and 2 of [How To Install and Use Docker on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04).
-
-- Docker Compose must installed on your server. You can refer to this Guide: [How To Install Docker Compose on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04).
-
 ### Installation
 
 #### Step 1 : Clone repository
 Clone the repository by running these commands: 
 ```
 cd ~
-git clone https://github.com/bytefury/crater
+git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_PROJECT
 ```
 
-#### Step 2 : Run below commands
+**OR make a local copy of your master project in your way.**
+
+#### Step 2 : Install NPM & Composer dependencies 
+
+- Install NPM globally if you haven't installed that already , for more information please refer this [link](https://docs.npmjs.com/getting-started/installing-node)
+
+- After installing NPM globally , run `npm install` inside your cloned folder, it will download all the required dependencies.
+
+- Install composer to your system and run `composer install` inside your cloned folder to install all laravel/php dependencies.
+
+#### Step 3 : Run below commands
 Change your current working directory and run your app using below commands:
 
 ```
-$ cd crater
+$ cd YOUR_ROOT_FOLDER (ex. origin)
 $ cp .env.example .env
-$ docker-compose up -d
-$ ./docker-compose/setup.sh
 ```
+You will create an `.env` file by running the following command: `cp .env.example .env`. Or alternately you can just copy `.env.example` file to the same folder and re-name it to `.env`.
 
-#### Step 3 : Complete installation wizard
-Open your web browser and go to your given domain and follow the installation wizard.
+#### Step 4 : Complete installation & setup database connection
 
-On Installation wizard - Database setup, use below credentials:
-- Database Host: `db`
-- Database Name: `crater`
-- Database Username: `crater`
-- Database Password: `crater`  
+- run command: `php artisan key:generate` to generate a unique application key.
+
+Make changes to your `.env` file with your database server credentials
+
+- Database Host: `YOUR_HOST` // e.g. localhost
+- Database Name: `YOUR_DATABASE` // e.g. origin 
+- Database Username: `YOUR_USER` // e.g. root
+- Database Password: `YOUR_PASSWORD`
+
+- run command: `php artisan migrate` to run the built in migrations to create the database tables.
+
+- OPTIONAL run command: `php artisan db:seed` to seed the database.
+
+#### Step 5 : Storage:link 
+
+After your project is installed you must run this command to link your public storage folder for user files uploads:
+
+`php artisan storage:link` but you can skip for now if you want and run this comand later when you needed.
+
+### Step 6 : Login
+Open the link to the domain in the browser (Example: `https://origin.local` or `localhost`).
+
+After your project is installed and you can access it in a browser, click the login button on the right of the navigation bar.
+
+The administrator credentials are:
+
+Username: admin@admin.com
+
+Password: secret

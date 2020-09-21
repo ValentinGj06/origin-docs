@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Access Control</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5851d8">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <meta name="description" content="Origin is an app made in Laravel, JavaScript(jQuery & VueJS)">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="/assets/css/0.styles.05eb7892.css" as="style"><link rel="preload" href="/assets/js/app.a6c98a68.js" as="script"><link rel="preload" href="/assets/js/2.ded731a5.js" as="script"><link rel="preload" href="/assets/js/9.ced3907c.js" as="script"><link rel="prefetch" href="/assets/js/10.6ac81df9.js"><link rel="prefetch" href="/assets/js/11.d11e355d.js"><link rel="prefetch" href="/assets/js/12.e1c9de7b.js"><link rel="prefetch" href="/assets/js/13.31c4ff6b.js"><link rel="prefetch" href="/assets/js/14.75ccf7db.js"><link rel="prefetch" href="/assets/js/15.f3d0df83.js"><link rel="prefetch" href="/assets/js/16.875321da.js"><link rel="prefetch" href="/assets/js/17.05bbf524.js"><link rel="prefetch" href="/assets/js/18.21d4f64a.js"><link rel="prefetch" href="/assets/js/3.48227b6d.js"><link rel="prefetch" href="/assets/js/4.54facabd.js"><link rel="prefetch" href="/assets/js/5.6fdd2fc8.js"><link rel="prefetch" href="/assets/js/6.392fdc86.js"><link rel="prefetch" href="/assets/js/7.4bb31ca5.js"><link rel="prefetch" href="/assets/js/8.af7e4cf0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.05eb7892.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/origin-logo.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://192.168.1.197:10000" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Webmin
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://192.168.1.197/rm/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Website
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://192.168.1.197:10000" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Webmin
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://192.168.1.197/rm/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Website
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Вовед</a></li><li><a href="/installation.html" class="sidebar-link">Installation</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>User Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/dashboard.html" class="sidebar-link">Dashboard</a></li><li><a href="/guide/access.html" class="sidebar-link">Access | Пристап</a></li><li><a href="/guide/clients.html" class="sidebar-link">Clients</a></li></ul></section></li><li><a href="/api-documentation.html" class="sidebar-link">API Documentation</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Developer Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/installation.html" class="sidebar-link">Installation</a></li><li><a href="/guide/routes.html" class="sidebar-link">Routes</a></li><li><a href="/guide/backend.html" class="sidebar-link">Backend</a></li><li><a href="/guide/frontend.html" class="sidebar-link">Frontend</a></li><li><a href="/guide/database.html" class="sidebar-link">Database</a></li><li><a href="/guide/access-control.html" aria-current="page" class="active sidebar-link">Access Control</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/access-control.html#features" class="sidebar-link">Features:</a></li><li class="sidebar-sub-header"><a href="/guide/access-control.html#configuration" class="sidebar-link">Configuration</a></li><li class="sidebar-sub-header"><a href="/guide/access-control.html#middleware" class="sidebar-link">Middleware</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="access-control"><a href="#access-control" class="header-anchor">#</a> Access Control</h1> <p>Role/Permission control has been build with spatie/laravel-permission package.</p> <p>Origin has other access features as well:</p> <h2 id="features"><a href="#features" class="header-anchor">#</a> Features:</h2> <ul><li>Register/Login/Logout/Password Reset</li> <li>Account Confirmation By E-mail (need to be configured)</li> <li>Resend Confirmation E-mail (need to be configured)</li> <li>Option for Manual Account Confirmation by Admin</li> <li>Enable/Disable Registration</li> <li>Single Login (Logout all other devices)</li> <li>Clear User Session</li> <li>Configurable Password History</li> <li>Password Expiration</li> <li>Administrator Management</li> <li>User Index</li> <li>Activate/Deactivate Users</li> <li>Soft &amp; Permanently Delete Users</li> <li>Resend User Confirmation E-mails (need to be configured)</li> <li>Change Users Password</li> <li>Create/Manage Roles</li> <li>Manage Users Roles/Permissions</li> <li>Clear User Session</li></ul> <h2 id="configuration"><a href="#configuration" class="header-anchor">#</a> Configuration</h2> <div class="language- extra-class"><pre><code>[
+    // Whether the registration captcha is on or off
+    'contact' =&gt; env('CONTACT_CAPTCHA_STATUS', false),
+    'registration' =&gt; env('REGISTRATION_CAPTCHA_STATUS', false),
+    'login' =&gt; env('LOGIN_CAPTCHA_STATUS', false),
+],
+
+// Whether or not registration is enabled
+'registration' =&gt; env('ENABLE_REGISTRATION', true),
+
+// Configurations for the user
+'users' =&gt; [
+    // Whether or not the user has to confirm their email when signing up
+    'confirm_email' =&gt; env('CONFIRM_EMAIL', false),
+
+    // Whether or not the users email can be changed on the edit profile screen
+    'change_email' =&gt; env('CHANGE_EMAIL', false),
+
+    // The name of the super administrator role
+    'admin_role' =&gt; 'administrator',
+
+    // The default role all new registered users get added to
+    'default_role' =&gt; 'user',
+
+    /*
+     * Whether or not new users need to be approved by an administrator before logging in
+     * If this is set to true, then confirm_email is not in effect
+     */
+    'requires_approval' =&gt; env('REQUIRES_APPROVAL', false),
+
+    // Login username to be used by the controller.
+    'username' =&gt; 'email',
+
+    /*
+     * When active, a user can only have one session active at a time
+     * That is all other sessions for that user will be deleted when they log in
+     * (They can only be logged into one place at a time, all others will be logged out)
+     * AuthenticateSession middleware must be enabled
+     */
+    'single_login' =&gt; env('SINGLE_LOGIN', true),
+
+    /*
+     * How many days before users have to change their passwords
+     * false is off
+     */
+    'password_expires_days' =&gt; env('PASSWORD_EXPIRES_DAYS', 30),
+
+    /*
+     * The number of most recent previous passwords to check against when changing/resetting a password
+     * false is off which doesn't log password changes or check against them
+     */
+    'password_history' =&gt; env('PASSWORD_HISTORY', 3),
+],
+
+// Configuration for roles
+'roles' =&gt; [
+    // Whether a role must contain a permission or can be used standalone as a label
+    'role_must_contain_permission' =&gt; true,
+],
+</code></pre></div><h2 id="middleware"><a href="#middleware" class="header-anchor">#</a> Middleware</h2> <p>Both permission middleware from the spatie/laravel-permission package are used from their default locations and not extended, but you are free to extend them.</p> <p>The admin middleware is specified in app\Http\Kernel.php and states that anyone trying to access the routes in the following closure must:</p> <p>Be logged in
+Have the view-backend permission associated with one of their roles.
+Be subject to being forced to change your password after X number of days.
+It currently wraps all backend routes by default.</p> <p>Note: If you remove the admin middleware from the backend routes, anyone will be able to access the backend unless you specify elsewhere.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/database.html" class="prev">
+        Database
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a6c98a68.js" defer></script><script src="/assets/js/2.ded731a5.js" defer></script><script src="/assets/js/9.ced3907c.js" defer></script>
+  </body>
+</html>

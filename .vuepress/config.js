@@ -1,5 +1,5 @@
 module.exports = {
-    description: 'Crater is an open-source app made in Laravel, VueJS & React Native that helps you track expenses, payments & create professional invoices & estimates',
+    description: 'Origin is an app made in Laravel, JavaScript(jQuery & VueJS)',
     head: [
       ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/images/favicons/apple-touch-icon.png"}],
       ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/images/favicons/favicon-32x32.png"}],
@@ -12,18 +12,17 @@ module.exports = {
       ['meta', { name: "theme-color", content: "#ffffff"}],
     ],
     themeConfig: {
-        logo: '/images/crater-logo.png',
+        logo: '/images/origin-logo.png',
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Github', link: 'https://github.com/bytefury/crater' },
-            { text: 'Website', link: 'https://craterapp.com' },
-            {
-                text: 'Languages',
-                items: [
-                  { text: 'English', link: '/language/chinese/' },
-                  { text: 'Spanish', link: '/language/japanese/' }
-                ]
-            }
+            { text: 'Webmin', link: 'https://192.168.1.197:10000' },
+            { text: 'Website', link: 'http://192.168.1.197/rm/' },
+            // {
+            //     text: 'Languages',
+            //     items: [
+            //       { text: 'English', link: '/language/english/' },
+            //     ]
+            // }
         ],
         sidebar: [
             '/',
@@ -33,20 +32,24 @@ module.exports = {
                 collapsable: false,
                 children: [
                   '/guide/dashboard.md',
-                  '/guide/customers.md',
-                  '/guide/items.md',
-                  '/guide/estimates.md',
-                  '/guide/invoices.md',
-                  '/guide/payments.md',
-                  '/guide/expenses.md',
-                  '/guide/taxes.md',
-                  '/guide/reports.md',
-                  '/guide/settings.md',
+                  '/guide/access.md',
+                  '/guide/clients.md',
                 ]
             },
-            '/mobile.md',
             '/api-documentation.md',
-            '/developer-guide.md',
+            {
+                title: 'Developer Guide',
+                collapsable: false,
+                children: [
+                '/guide/installation.md',
+                '/guide/routes.md',
+                '/guide/backend.md',
+                '/guide/frontend.md',
+                '/guide/database.md',
+                '/guide/access-control.md',
+                ]
+            },
+            
         ]
     },
     plugins: [
@@ -56,6 +59,16 @@ module.exports = {
           {
             type: 'wrapper',
             defaultTitle: '',
+          },
+        ],
+        [
+          'vuepress-plugin-zooming',
+          {
+            delay: 1000,
+            options: {
+              bgColor: 'black',
+              zIndex: 10000,
+            },
           },
         ]
     ],

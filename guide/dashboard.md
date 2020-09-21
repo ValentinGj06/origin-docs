@@ -1,11 +1,8 @@
 # Dashboard
 
-As the name suggests, the dashboard is your primary page which displays the entire overview of the app everytime you login to the app.
+Како што и самото име сугерира, Dashboard е примарната страница која го прикажува целиот преглед на апликацијата секој пат штом се најавите на истата.
 
-You can view the overall, Amount that is due, Your number of customers, Number of invoices generated and number of estimates generated.
-
-The graph below shows sales, receipts, expenses and net income for the particular year and upon hovering on a particular month, you can see the data of that month. You can also select the previous year from the filter tab on the top right corner of the graph.
-Finally it shows the list of invoices that are due and your most recent estimates.
+Тука графички се прикажани некои статистики и пресметки како број на корисници по возраст, по градови, пресметки по категории, топ играчи...
 
 ::: wrapper
 ![Dashboard Page](/images/dashboard.png)

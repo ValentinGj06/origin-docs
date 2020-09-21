@@ -1,18 +1,13 @@
-# Introduction
+# Вовед
 
-Crater is an open-source web & mobile app that helps you track expenses, payments & create professional invoices & estimates.
+Origin е веб апикација за управување и филтрирање на податоци.
 
-Web Application is made using Laravel & VueJS while the Mobile Apps are built using React Native.
+Веб апликацијата е направена со PHP (Laravel) & JavaScript (VueJS, jQuery & Bootstrap) и MySql како database system.
 
-## Features:
+## Функционалности:
 
 - [Dashboard](./guide/dashboard.md)
-- [Customers](./guide/customers.md)
-- [Items](./guide/items.md)
-- [Estimates](./guide/estimates.md)
-- [Invoices](./guide/invoices.md)
-- [Payments](./guide/payments.md)
-- [Expenses](./guide/expenses.md)
-- [Taxes](./guide/taxes.md)
-- [Reports](./guide/reports.md)
-- [Settings](./guide/settings.md)
+- [Access](./guide/access.md)
+- [Clients](./guide/clients.md)
+
+**NOTE: Documentation is almost 70% completed**
